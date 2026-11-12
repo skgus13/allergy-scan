@@ -1,0 +1,21 @@
+# FastAPI & Server
+fastapi>=0.115.0
+uvicorn[standard]>=0.30.0
+python-multipart>=0.0.9
+pydantic>=2.8.0
+pydantic-settings>=2.4.0
+python-dotenv>=1.0.1
+httpx>=0.27.0
+
+# Database (팀원 3)
+sqlalchemy>=2.0.30
+
+# Analysis & Fuzzy Matching (팀원 2)
+rapidfuzz>=3.9.0
+
+# Image Processing & OCR (팀원 1)
+opencv-python>=4.10.0.84
+numpy>=1.26.4
+# PaddleOCR은 로컬 환경에 맞춰 설치 (CPU 기본):
+# pip install paddlepaddle paddleocr
+paddleocr>=2.8.1
