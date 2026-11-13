@@ -19,7 +19,7 @@
 | **Frontend** | React (Vite), HTML/CSS | 사용자 웹 화면(UI/UX), 카메라 연동, Bounding Box 시각화 |
 | **Backend** | Python, FastAPI | 사진 업로드, 모듈(OCR/분석) 연결 및 REST API 제공 |
 | **Image & OCR** | OpenCV, PaddleOCR (PP-OCRv5) | 이미지 전처리, 한국어/영어 텍스트 및 좌표(Bounding Box) 추출 |
-| **Analysis** | Python, RapidFuzz | 문자열 유사도 분석, 알레르기 19종 동의어 매칭 |
+| **Analysis** | Python, RapidFuzz | 문자열 유사도 분석, 알레르기 동의어 매칭 |
 | **Database** | SQLite (SQLAlchemy) | 사용자 알레르기 설정, 바코드 캐시 및 검사 기록 저장 |
 | **External API** | HACCP 포장지표기정보 API, 식품안전나라, Open Food Facts | 바코드/품목보고번호 기반 공식 원재료 및 알레르기 교차 확인 |
 

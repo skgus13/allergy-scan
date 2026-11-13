@@ -29,17 +29,17 @@ export default function App() {
       .then((data) => {
         if (data?.allergens) setAllergenList(Object.keys(data.allergens));
       })
-      .catch(() => {});
+      .catch(() => { });
 
     fetchMyAllergens()
       .then((data) => {
         if (data?.allergens?.length) setSelectedAllergens(data.allergens);
       })
-      .catch(() => {});
+      .catch(() => { });
 
     fetchScanHistory()
       .then((data) => setHistory(data?.items || []))
-      .catch(() => {});
+      .catch(() => { });
   }, []);
 
   const toggleAllergen = (item) => {
@@ -93,13 +93,13 @@ export default function App() {
   return (
     <div className="container">
       <header className="header">
-        <h1>🔍 AllergyScan</h1>
-        <p>식품 성분표 OCR &amp; 알레르기 19종 자동 판별 웹 서비스</p>
+        <h1>AllergyScan</h1>
+        <p>식품 성분표 알레르기 자동 판별 앱 서비스</p>
       </header>
 
       {/* 1. 내 알레르기 설정 섹션 */}
       <section className="card">
-        <h2>1. 내 알레르기 성분 선택 (식약처 의무표시 19종)</h2>
+        <h2>1. 내 알레르기 성분 선택 </h2>
         <div className="chip-grid">
           {allergenList.map((item) => {
             const active = selectedAllergens.includes(item);

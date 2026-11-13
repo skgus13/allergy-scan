@@ -5,7 +5,7 @@ from app.db.database import init_db
 
 app = FastAPI(
     title="AllergyScan API",
-    description="성분표 사진 OCR 및 알레르기 19종 분석 백엔드 API",
+    description="식품 성분표 알레르기 자동 판별 앱 서비스 백엔드 API",
     version="0.1.0",
 )
 
